@@ -1,0 +1,32 @@
+#map {
+    width: 100%;
+    height: 700px;
+    margin: 20px auto;
+    background-color: grey;
+}
+
+.radio-label-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.image-happy {
+  background-image: url("../images/happy.png");
+  height: 150px;
+  width: 150px;
+}
+
+.image-angry {
+  background-image: url("../images/angry.png");
+  height: 150px;
+  width: 150px;
+}
+
+.image-sad {
+  background-image: url("../images/sad.png");
+  height: 150px;
+  width: 150px;
+}
