@@ -10,7 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('front');
 });
+*/
+
+Route::get('/', 'PageController@index');
+//Route::resource('mood', 'MoodController');

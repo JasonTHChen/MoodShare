@@ -52,7 +52,7 @@
         <div id="map"></div>
     </div>
 @endsection
-
+@include('footervarview')
 @section('page-script')
     <script type="text/javascript">
         $(window).on('load', function() {
@@ -63,5 +63,6 @@
             $('#myModal').modal('show');
         }
     </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSCPuEXdDmQrg0PTpB3H4Lk3djzg_pfBM&callback=initMap"></script>
     <script src="{{asset('js/map.js')}}"></script>
 @endsection
