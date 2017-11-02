@@ -19,8 +19,8 @@ class PageController extends Controller
         JavaScript::put([
             'cities' => $cites
         ]);
+
         return view('front');
-        //return view('mood.mood');
     }
 
     /**
@@ -42,7 +42,7 @@ class PageController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**
@@ -52,9 +52,32 @@ class PageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $this->validate($request, [
+            'mood' => 'required',
+            'city' => 'required'
+        ]);
+        $mood = Mood::find($request->city);
+        //return dd($mood);
+        //return dd($request->mood);
+        switch ($request->mood) {
+            case 1:
+                $mood->happy += 1;
+                break;
+            case 2:
+                $mood->angry += 1;
+                break;
+            case 3:
+                $mood->sad += 1;
+                break;
+            default:
+                echo 'error';
+                //return back();
+        }
+        $mood->save();
+        $cites = Mood::all();
+        return view('donate');
     }
 
     /**

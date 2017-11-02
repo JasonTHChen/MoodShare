@@ -27,7 +27,9 @@ class CreateMoodsTable extends Migration
         $cities = array
         (
             array('Vancouver', 49.279220, -123.122532),
-            array('Burnaby', 49.246527, -122.982270)
+            array('Burnaby', 49.246527, -122.982270),
+            array('Richmond', 49.162190, -123.138196),
+            array('Surrey', 49.099874, -122.801483)
         );
         foreach($cities as $city) {
             // Insert some stuff

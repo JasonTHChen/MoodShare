@@ -8,15 +8,6 @@ function initMap() {
         ['Burnaby', 49.246527, -122.982270, 504, 21, 85]
     ]
 */
-    var vancouver = { lat: 49.2577142, lng: -123.1941151 };
-    var burnaby = { lat: 49.2399647, lng: -123.0283806 };
-    var richmond = { lat: 49.1783514, lng: -123.276426 };
-    var surrey = { lat: 49.1110928, lng: -122.9414654 };
-    var delta = {lat: 49.0986173, lng: -123.2502014}
-    var coquitlam = { lat: 49.2850052, lng: -122.8268027 };
-    var langley = { lat: 49.0986192, lng: -122.6764454 };
-    var newWest = { lat: 49.2065512, lng: -122.9526156 };
-    var mapleRidge = { lat: 49.2599029, lng: -122.6804384 };
     console.log(cities);
 
     map = new google.maps.Map(document.getElementById('map'), {
